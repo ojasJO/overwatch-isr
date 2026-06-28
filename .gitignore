@@ -1,0 +1,73 @@
+# ═══════════════════════════════════════════════════════════════════════
+# OVERWATCH ISR — .gitignore
+# ═══════════════════════════════════════════════════════════════════════
+
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environment ──────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── IDE / Editor ─────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ── OS cruft ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── YOLO / ML weights (large binaries — download or export locally) ──
+models/
+*.pt
+*.engine
+*.onnx
+*.torchscript
+
+# ── Recorded footage (SD card dumps — never commit video) ────────────
+footage/*.avi
+footage/*.mp4
+footage/*.mov
+footage/*.mkv
+
+# ── Runtime outputs (regenerated every run) ──────────────────────────
+history/*.jpg
+history/*.jpeg
+history/*.png
+history/manifest.json
+history/orthomosaic.jpg
+orthomosaic.jpg
+mosaic/
+
+# ── DEM data (large GeoTIFF — download separately) ───────────────────
+data/dem/*.tif
+data/dem/*.tiff
+
+# ── Survey export (WebODM staging — generated post-flight) ───────────
+survey_export/
+survey/
+
+# ── Archive (old phase-1 artefacts moved here on boot) ───────────────
+archive/
+
+# ── Misc ─────────────────────────────────────────────────────────────
+*.log
+*.bak
+.envdatasets/
+runs/
+datasets/
+runs/
