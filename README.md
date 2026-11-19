@@ -12,6 +12,10 @@
   <img src="https://img.shields.io/badge/license-MIT-blue" />
 </p>
 
+<p align="center">
+  <img src="docs/images/dashboard-mosaic.png" alt="OVERWATCH tactical dashboard: live orthomosaic, master-track contacts and detection feed" width="100%" />
+</p>
+
 ---
 
 ## Overview
@@ -156,6 +160,11 @@ A single physical object (e.g., a parked truck) is detected from many gimbal ang
 ## Dashboard
 
 The tactical UI is a single-page Leaflet application served by Flask + SocketIO at `http://localhost:5000`.
+
+<p align="center">
+  <img src="docs/images/dashboard-frustum.png" alt="Oblique pass: live camera frustum projected on the map with per-target error margin" width="100%" />
+  <br/><sub>Oblique pass — live frustum projected onto the map, Master Track pins, and ± error margin from the ray-cast geolocator.</sub>
+</p>
 
 | Panel | Content |
 |---|---|
